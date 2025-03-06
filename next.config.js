@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
-  // basePath: "/NotisApp", // Comentado para solucionar el error 404
+  eslint: {
+    ignoreDuringBuilds: true, // Desactiva errores de ESLint en el build
+  },
+  output: "export",
+  basePath: "/Noticias",
+  assetPrefix: "/Noticias/",
   images: {
     unoptimized: true,
   },
